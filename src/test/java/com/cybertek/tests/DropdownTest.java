@@ -58,7 +58,8 @@ public class DropdownTest {
         String actualSelectedOption = productDropdown.getFirstSelectedOption().getText();
         Assert.assertEquals(actualSelectedOption,expectedSelectedOption,"First option selected is NOT as expected");
 
-
+// Then select FamilyAlbum, make quantity 2, and click Calculate
+            productDropdown.selectByVisibleText("FamilyAlbum");
 
 
     }
